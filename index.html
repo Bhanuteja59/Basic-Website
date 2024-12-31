@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- top of the class -->
+
+        <div class="top row ">
+            <div class="image col-8">
+               <h2> Basic website</h2> 
+            </div>
+            <div class="login row col-4 ">
+                <div class="col-4 col-sm-6">
+                    <div class="text-center">
+                        <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">
+                          <button class="btn btn-primary"> Login </button></a>
+                      </div>
+                </div>
+                <div class="col-4 col-6">
+                    <div class="text-center">
+                        <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">
+                          <button class="btn btn-secondary"> Sign up </button></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- buttons-->
+
+        <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="defaultForm-email" class="form-control validate" placeholder=" Enter Email ">
+          <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="defaultForm-pass" class="form-control validate" placeholder="Enter Password">
+          <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-default">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header text-center">
+      <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body mx-3">
+      <div class="md-form mb-5">
+        <i class="fas fa-user prefix grey-text"></i>
+        <input type="text" id="orangeForm-name" class="form-control validate" placeholder="Enter your name ">
+        <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+      </div>
+      <div class="md-form mb-5">
+        <i class="fas fa-envelope prefix grey-text"></i>
+        <input type="email" id="orangeForm-email" class="form-control validate" placeholder="Enter your email">
+        <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+      </div>
+
+      <div class="md-form mb-4">
+        <i class="fas fa-lock prefix grey-text"></i>
+        <input type="password" id="orangeForm-pass" class="form-control validate" placeholder="Enter your password ">
+        <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+      </div>
+
+    </div>
+    <div class="modal-footer d-flex justify-content-center">
+      <button class="btn btn-deep-orange">Sign up</button>
+    </div>
+  </div>
+</div>
+</div>
+
+        
+    <!-- below down body  -->
+    <div class="align-middle">
+        <div class="text ">
+            <i class="fas fa-text-width fa-4x fa-fw">
+                <button class="button" data-text="Awesome">
+    <span class="actual-text">&nbsp;web-development &nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;web-development&nbsp;</span>
+</button>
+            <p>
+                Web development refers to the process of creating and maintaining websites or web applications. It involves a combination of various skills, technologies, and methodologies to design, develop, and deploy a functional and user-friendly website. Web development can range from simple static pages to complex dynamic web applications that enable interactive user experiences.
+             </p>
+<strong > Key Components of Web Development: </strong>
+
+<div class="divs row">
+<h2> Front-end Development: </h2>
+<div class="col-8">
+Front-end development involves creating the user interface and user experience that a website or web application presents to its users. This includes designing the layout, navigation, and visual elements using technologies like HTML, CSS, and JavaScript. Front-end developers aim to create responsive and interactive interfaces that work seamlessly across different devices and browsers.
+</div>
+<div class="img  col-4" data-aos="fade-left" >
+    <img class="photos" src="https://qubited.com/wp-content/uploads/2023/01/cover.jpg" alt="image-photo" data-aos="fade-down">
+
+</div>
+</div>
+
+<div class="divs row"> 
+<h2>Back-end Development: </h2>
+<div class="img col-8 ">
+Back-end development focuses on the server-side of a website or web application. It involves building the server, database, and application logic that enable the website to function. Common back-end programming languages include Python, Ruby, PHP, Java, and Node.js. Back-end developers work to ensure that data is stored, retrieved, and processed efficiently.
+</div>
+<div class="img  col-4 ">
+    <img class="photos" src="https://www.temok.com/blog/wp-content/uploads/2020/04/backend7.jpg" alt="image-photo">
+</div>
+</div>
+
+<div class="divs row ">
+<h2>Full-Stack Development: </h2>
+<div class="img col-8"> 
+Full-stack developers are proficient in both front-end and back-end development. They have a comprehensive understanding of the entire web development process and can work on all aspects of a project, from designing the user interface to implementing server-side logic and database management.
+</div>
+<div class="img  col-4">
+    <img class="photos" src="https://miro.medium.com/v2/resize:fit:1400/1*2JeIqLrqf1rsCizJ2ljYkg.png" alt="image-photo" data-aos="fade-down">
+</div>
+</div>
+
+<div class="divs row ">
+<h2>Database Management: </h2>
+<div class="col-8"> 
+Web developers use databases to store and retrieve data efficiently. Popular database management systems include MySQL, PostgreSQL, MongoDB, and SQLite. Developers design databases to ensure data integrity, security, and optimal performance.
+</div>
+<div class="img  col-4">
+    <img class="photos" src="https://s7280.pcdn.co/wp-content/uploads/2016/06/database-blue.png" alt="image-photo" data-aos="fade-down">
+</div>
+</div>
+
+<div class="divs row ">
+<h2>Web Development Frameworks: </h2>
+<div class="col-8"> 
+Frameworks provide pre-built modules and a structured environment to streamline the development process. Front-end frameworks like React, Angular, and Vue.js simplify building interactive user interfaces, while back-end frameworks like Django (Python), Ruby on Rails (Ruby), and Express (Node.js) facilitate server-side development.
+</div>
+<div class="img  col-4">
+    <img class="photos" src="https://1.bp.blogspot.com/-xR9tYoOoc6Y/X-3L9PijRwI/AAAAAAAABHs/2kPXHNu_TXURcUgK5G-xomJ6mlrj26yvwCPcBGAYYCw/s721/Screenshot%2Bfrom%2B2020-12-31%2B18-22-17.png" alt="image-photo" data-aos="fade-down">
+</div>
+</div>
+
+<div class="divs row ">
+<h2>Responsive Design:  </h2>
+<div class="col-8"> 
+With the increasing use of mobile devices, responsive design has become crucial. Web developers design websites to adapt to different screen sizes and resolutions, ensuring a consistent and user-friendly experience across various devices.
+</div>
+<div class="img  col-4">
+    <img class="photos" src="https://miro.medium.com/v2/resize:fit:2000/1*qF8LfAwUhl57g9T0BVvVdg.jpeg" alt="image-photo" data-aos="fade-down">
+</div>
+</div>
+
+<div class="divs row ">
+<h2>Web Security: </h2>
+<div class="col-8"> 
+Security is a critical aspect of web development. Developers need to implement measures to protect against common vulnerabilities such as SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF). Secure communication using HTTPS is also essential.
+</div>
+<div class="img  col-4">
+    <img class="photos" src="https://m.economictimes.com/thumb/height-450,width-600,imgsize-122134,msid-102489123/cyber-security-istock.jpg" alt="image-photo" data-aos="fade-down">
+</div>
+</div>
+
+<div class="divs row ">
+<h2>Version Control: </h2>
+<div class="col-8"> 
+Version control systems like Git are essential tools for web developers to manage and track changes in their code. They enable collaboration, code review, and the ability to roll back to previous versions if needed.
+</div>
+<div class="img  col-4">
+    <img class="photos" src="https://miro.medium.com/v2/resize:fit:1400/1*OaGPWSyQWEsMwJEVm5_1Ow.png" alt="image-photo" data-aos="fade-down">
+</div>
+</div>
+
+<div class="divs row ">
+<h2>Continuous Integration/Continuous Deployment (CI/CD): </h2>
+<div class="col-8"> 
+CI/CD practices involve automating the process of testing and deploying code changes. This ensures a more reliable and efficient development workflow.
+</div>
+<div class="img  col-4">
+    <img class="photos" src="https://cd.foundation/wp-content/uploads/sites/78/2020/09/devops.png" alt="image-photo" data-aos="fade-down">
+</div>
+</div>         
+        </i>
+        </div>
+    </div>
+
+    <div class="text">
+        <h4>Conclusion: </h4>
+Web development is a dynamic and ever-evolving field, with new technologies and best practices emerging regularly. Successful web development requires a combination of technical expertise, creativity, and a commitment to staying updated with the latest industry trends. Whether you're building a personal blog, an e-commerce platform, or a complex web application, a well-rounded understanding of web development principles is essential for creating effective and engaging online experiences.
+
+    </div>
+    <hr>
+    
+    <!-- footer -->
+
+        <div class="footer" >
+            <h3>
+                Follow us on ...
+            </h3>
+            <div class="footer-images" >
+                <div class=" pic row justify-content-center">
+                    <div class="col-1 " 
+>
+                       <a href="#" title="Instagram"> <img class="pics" src="https://cdn-icons-png.flaticon.com/128/1384/1384063.png" alt="image"> </a>
+                    </div>
+                    <div class="col-1 " >
+                        <a href="#" title="Linked in">   <img class="pics" src="https://cdn-icons-png.flaticon.com/128/1384/1384062.png" alt="image"></a>
+                    </div>
+                    <div class="col-1  ">
+                       <a href="#" title="You tube"> <img class="pics" src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" alt="image">  </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+  <div data-aos="fade-in"></div>
+
+
+
+
+
+    </div>
+
+    <!-- java script -->
+  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+
+</body>
+</html>
